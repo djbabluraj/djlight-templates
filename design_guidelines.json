@@ -1,0 +1,168 @@
+{
+  "app_name": "DJ Light Templates",
+  "personality": "6 Glass / Luxe",
+  "personality_one_liner": "A premium, club-like template marketplace where neon accents and frosted glass over deep obsidian create an immersive, high-energy electronic vibe.",
+  "color": {
+    "surface": "#0a0a0a",
+    "onSurface": "#ffffff",
+    "surfaceSecondary": "#141414",
+    "onSurfaceSecondary": "#ebebeb",
+    "surfaceTertiary": "#1f1f1f",
+    "onSurfaceTertiary": "#d1d1d1",
+    "surfaceInverse": "#ffffff",
+    "onSurfaceInverse": "#0a0a0a",
+    "brand": "#c4fb6d",
+    "brandPrimary": "#c4fb6d",
+    "onBrandPrimary": "#0a0a0a",
+    "brandSecondary": "#e0fd9e",
+    "onBrandSecondary": "#0a0a0a",
+    "brandTertiary": "#1f2c0d",
+    "onBrandTertiary": "#c4fb6d",
+    "success": "#00e676",
+    "onSuccess": "#000000",
+    "warning": "#ffea00",
+    "onWarning": "#000000",
+    "error": "#ff1744",
+    "onError": "#ffffff",
+    "info": "#00b0ff",
+    "onInfo": "#000000",
+    "border": "#292929",
+    "borderStrong": "#3d3d3d",
+    "divider": "#1f1f1f"
+  },
+  "typography": {
+    "displayFontFamily": "Space Grotesk",
+    "textFontFamily": "Plus Jakarta Sans",
+    "scale": {
+      "sm": 12,
+      "base": 14,
+      "lg": 16,
+      "xl": 20,
+      "2xl": 24
+    }
+  },
+  "spacing": {
+    "rule": "Generous spacing. Use md/lg between cards, and xl for section breaks. The thumb zone must remain clear, and sticky CTA patterns must account for safe areas.",
+    "xs": 4,
+    "sm": 8,
+    "md": 12,
+    "lg": 16,
+    "xl": 24,
+    "2xl": 32,
+    "3xl": 48
+  },
+  "radius_tokens": {
+    "sm": 6,
+    "md": 12,
+    "lg": 20,
+    "pill": 999
+  },
+  "shadow_tier": 0,
+  "navigation": "bottom_tabs",
+  "icon_set": "Phosphor",
+  "glassmorphism": {
+    "enabled": true,
+    "do's": [
+      "Use over featured template hero cards with neon imagery underneath.",
+      "Apply to the bottom tab bar and sticky headers.",
+      "Ensure a translucent tinted base (>= 75% opacity) behind glass for readability.",
+      "Apply to 'Premium' status badges floating over thumbnails."
+    ],
+    "dont's": [
+      "Never blur body text or form inputs.",
+      "Do not overdo glass on dense grid items; use solid surfaceSecondary for the regular templates.",
+      "Do not use glass without the underlying tint layer; readability is non-negotiable."
+    ]
+  },
+  "platform_libraries": {
+    "glass": {
+      "ios": "expo-glass-effect",
+      "android": "expo-blur",
+      "low_end_android_fallback": "solid surfaceSecondary"
+    },
+    "image": "expo-image",
+    "blur": "expo-blur",
+    "bottom_sheet": "@gorhom/bottom-sheet",
+    "animation": "react-native-reanimated",
+    "gesture": "react-native-gesture-handler"
+  },
+  "screens": [
+    {
+      "name": "Home",
+      "purpose": "Discover and download high-quality DJ light and Avee templates.",
+      "states": {
+        "loading": "Centered neon lime spinner over deep obsidian canvas.",
+        "empty": "No templates available yet. Show an abstract geometric illustration with 'Check back later'.",
+        "error": "Failed to load templates. 'Connection lost' with a Retry button."
+      },
+      "layout": "Sticky glass header with a 'Free / Premium' segmented control. Beneath it, a 2-column masonry or wrap grid for template cards. Each card fills `(screenWidth - 2*lg - md) / 2`. Card contains: 1. Full-width thumbnail image at the top with a top-down gradient scrim. 2. A pill badge over the image (Premium/Free). 3. Title typography (Space Grotesk). 4. A primary download icon button (Phosphor) aligned bottom-right of the card."
+    },
+    {
+      "name": "Template Detail",
+      "purpose": "Preview the template in high resolution and trigger the download.",
+      "states": {
+        "loading": "Skeleton of the hero image and title.",
+        "empty": "Template not found.",
+        "error": "Error fetching template details."
+      },
+      "layout": "Edge-to-edge hero image at the top, fading into the `surface` via a strong vertical gradient scrim (transparent to 80% surface at the bottom of the image). Title and 'Premium' badge sit at the bottom of the scrim. Below the fold: Template description, file size, requirements. Sticky CTA at the screen root (bottom): 'Download Template' pinned above safe area inside a frosted glass container."
+    },
+    {
+      "name": "Admin Dashboard",
+      "purpose": "Manage uploaded templates and initiate new uploads.",
+      "states": {
+        "loading": "Spinner.",
+        "empty": "No templates uploaded yet. CTA to 'Upload First Template'.",
+        "error": "Failed to load admin stats."
+      },
+      "layout": "List view of all uploaded templates with quick edit/delete actions. Sticky FAB (Floating Action Button) with `brandPrimary` background and glass effect for 'Add New'."
+    },
+    {
+      "name": "Admin Upload",
+      "purpose": "Form to upload file, thumbnail, title, type, and price.",
+      "states": {
+        "loading": "Progress bar indicating upload status.",
+        "empty": "N/A",
+        "error": "Upload failed message with retry option."
+      },
+      "layout": "Single column form inside a ScrollView wrapped in KeyboardAvoidingView. Labels above inputs. Image picker block at the top. 'Publish Instantly' sticky CTA anchored at the bottom."
+    },
+    {
+      "name": "Settings",
+      "purpose": "Access app policies and contact information.",
+      "states": {
+        "loading": "N/A",
+        "empty": "N/A",
+        "error": "N/A"
+      },
+      "layout": "Simple list layout. Tinted icon containers (`brandTertiary` background) leading each list row. Chevrons on the right."
+    }
+  ],
+  "images": {
+    "hero_featured": {
+      "url": "https://images.unsplash.com/photo-1629276300673-58ed3ee42034?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHwzfHxuZW9uJTIwbXVzaWMlMjBmZXN0aXZhbCUyMHN0YWdlfGVufDB8fHx8MTc4MTUwOTY1MHww&ixlib=rb-4.1.0&q=85",
+      "alt": "Neon stage lights at a music festival"
+    },
+    "template_thumb_1": {
+      "url": "https://images.unsplash.com/photo-1773385404894-104116c1ef31?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHwyfHxuZW9uJTIwbXVzaWMlMjBmZXN0aXZhbCUyMHN0YWdlfGVufDB8fHx8MTc4MTUwOTY1MHww&ixlib=rb-4.1.0&q=85",
+      "alt": "Colorful laser stage lights"
+    },
+    "template_thumb_2": {
+      "url": "https://images.unsplash.com/photo-1629276300600-1842b7d3df30?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHwxfHxuZW9uJTIwbXVzaWMlMjBmZXN0aXZhbCUyMHN0YWdlfGVufDB8fHx8MTc4MTUwOTY1MHww&ixlib=rb-4.1.0&q=85",
+      "alt": "Yellow, pink, and blue lights"
+    },
+    "admin_dashboard_bg": {
+      "url": "https://images.unsplash.com/photo-1636818477383-3a23426afe87?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxNzV8MHwxfHNlYXJjaHwzfHxkaiUyMG1peGluZyUyMGJvYXJkJTIwZGFya3xlbnwwfHx8fDE3ODE1MDk2NTB8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "DJ sound mixing board with colorful lights"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Strictly follow the Dark-First layout combined with Luxe/Glass elements. The app must feel like a premium nightclub/electronic music experience.",
+    "Do NOT use any blue, indigo, or purple. The entire app must rely on deep obsidian backgrounds and the designated Neon Lime (`brandPrimary`: #c4fb6d) for accents.",
+    "For the Home screen 2-column grid: ensure cards use `surfaceSecondary` with `md` border radius. Wrap the cards correctly using `flexWrap` and `space-between` to avoid orphan layout bugs.",
+    "Implement the 'Gradient Scrim' rule heavily: Any thumbnail image with text/badges floating over it MUST have an `expo-linear-gradient` scrim (transparent to dark) underneath the text for guaranteed contrast.",
+    "Make the 'Download' action visually distinct in the Template Detail screen. Keep it sticky above the bottom safe area.",
+    "Ensure 'Free' and 'Premium' tabs on the Home screen use a segmented control pattern inside a frosted glass sticky header.",
+    "For the download progress indicator, use a dynamic bottom sheet or an overlay banner that doesn't block navigation."
+  ]
+}
