@@ -28,41 +28,46 @@ export default function Privacy() {
       >
         <Text style={styles.updated}>Last updated · May 2026</Text>
         <Section title="1. Overview">
-          DJ Light Templates is a free download library for DJ Light and Avee
-          visual templates. We respect your privacy and do not require user
-          accounts to browse or download templates.
-        </Section>
-        <Section title="2. Information we collect">
-          We do not collect personally identifiable information. The app only
-          stores anonymous download counts on our server to display popularity
-          metrics for each template.
-        </Section>
-        <Section title="3. Templates & downloads">
-          Template files are downloaded directly from our secure servers. When
-          you tap Download, the file is saved to your device storage. We do
-          not track which templates you download to your device.
-        </Section>
-        <Section title="4. Notifications">
-          When you grant permission, we may send you a notification when a new
-          template is published. You can disable this anytime from your device
-          settings.
-        </Section>
-        <Section title="5. Third-party services">
-          The app does not integrate any third-party analytics, advertising or
-          tracking SDKs. Premium purchases (if enabled) are handled via the
-          payment provider&apos;s own privacy policy.
-        </Section>
-        <Section title="6. Children">
-          The app is rated for general audiences and does not knowingly collect
-          information from children under 13.
-        </Section>
-        <Section title="7. Changes">
-          We may update this policy from time to time. Continued use of the app
-          means you accept the latest version.
-        </Section>
-        <Section title="8. Contact">
-          Questions? Reach us via the Contact page in Settings.
-        </Section>
+DJ Light Templates provides DJ Light and Avee Player visual templates for browsing and downloading. We respect user privacy and aim to provide a safe experience.
+</Section>
+
+<Section title="2. Information We Collect">
+The application does not require account registration. Limited technical information may be processed for downloads, notifications, security and app performance.
+</Section>
+
+<Section title="3. Downloads & Storage">
+When you download a template, the file is saved to your selected device storage location. The application does not access your personal photos, videos, contacts or private files.
+</Section>
+
+<Section title="4. Notifications">
+If permission is granted, the application may send notifications about new templates, updates and important announcements. Notifications can be disabled anytime from device settings.
+</Section>
+
+<Section title="5. Advertising">
+The application may display advertisements through Google AdMob or other advertising partners. Advertising providers may collect device identifiers and usage information according to their own privacy policies.
+</Section>
+
+<Section title="6. Third-Party Services">
+The application may use Google AdMob, Google Play Services and Firebase services (if enabled). These services operate under their own privacy policies.
+</Section>
+
+<Section title="7. Children">
+The application is intended for a general audience and does not knowingly collect personal information from children under 13 years of age.
+</Section>
+
+<Section title="8. Data Security">
+Reasonable security measures are used to protect application services and downloaded content.
+</Section>
+
+<Section title="9. Policy Updates">
+This Privacy Policy may be updated from time to time. Continued use of the application indicates acceptance of the latest version.
+</Section>
+
+<Section title="10. Contact">
+Email: babluraj8088@gmail.com
+
+Telegram: https://t.me/Gyantechsupport
+</Section>
       </ScrollView>
     </View>
   );

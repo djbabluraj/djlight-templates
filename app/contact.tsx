@@ -14,8 +14,8 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { colors, radius, spacing } from "@/src/theme";
 
-const SUPPORT_EMAIL = "support@djlights.app";
-const SUPPORT_TELEGRAM = "https://t.me/djlighttemplates";
+const SUPPORT_EMAIL = "babluraj8088@gmail.com";
+const SUPPORT_TELEGRAM = "https://telegram.me/Gyantechsupport"
 
 type Channel = {
   id: string;

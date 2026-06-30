@@ -72,7 +72,7 @@ export default function Settings() {
     }
   }, []);
 
-  const baseRows: Row[] = [
+ const baseRows: Row[] = [
     {
       id: "privacy",
       label: "Privacy Policy",
@@ -96,19 +96,10 @@ export default function Settings() {
       icon: "star-outline",
       onPress: () => Linking.openURL("https://play.google.com"),
       testID: "settings-rate",
-    },
-    {
-      id: "admin",
-      label: "Admin Panel",
-      sub: "Manage templates",
-      icon: "lock-closed-outline",
-      onPress: () => router.push("/admin/login"),
-      testID: "settings-admin",
-    },
-  ];
-
-  const rows: Row[] =
-    Platform.OS === "android"
+},
+];
+const rows: Row[] =
+Platform.OS === "android"
       ? [
           {
             id: "download-folder",

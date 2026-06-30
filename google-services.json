@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "211617869698",
+    "project_id": "dj-light-templates",
+    "storage_bucket": "dj-light-templates.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211617869698:android:241dae16c12ff0091ce99b",
+        "android_client_info": {
+          "package_name": "com.djlights.templates"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdu1NWHlrk1u9W_aBOFVauhOBNjYGt1nw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
