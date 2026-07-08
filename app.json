@@ -25,9 +25,9 @@
     },
     "android": {
       "package": "com.djlights.templates",
-      "versionCode": 6,
+      "versionCode": 7,
       "googleServicesFile": "./google-services.json",
-"adaptiveIcon": {
+      "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#0a0a0a"
       },
